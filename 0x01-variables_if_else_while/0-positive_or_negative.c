@@ -3,27 +3,26 @@
 #include <stdio.h>
 
 /**
- *main - Entry point
- *Description: Positive anything to better then negative to nothing
- * Return: Always 0 (Success)
+ *main - Prints if number is positive, zero or negative
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n; dig:
+	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	dig = n % 10;
-
-	printf("Last digit of %d is", n);
-
-	if (dig > 5)
+	if (n > 0)
 	{
-		printf("%d and is greater than 5\n", dig);
+		printf("%d is positive\n", n);
 	}
-	else if (dig == 0)
+	else if (n == 0)
 	{
-		printf("%d and is less than 6 and not 0\n", dig);
+		printf("%d is zero\n", n);
+	}
+	else
+	{
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
