@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <time.h>
 
 /**
  * main - Prints the alphabet.
@@ -7,7 +7,7 @@
 int main(void)
 
 {
-	char alp(26) = "abcdefghijklmnopqrstuvwxyz";
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
 
 	int i;
 
